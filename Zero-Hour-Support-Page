@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zero Hour support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f5f5fa;
+      --surface: #ffffff;
+      --text: #20202a;
+      --secondary: #626273;
+      --accent: #5146dc;
+      --border: #dedee9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--background); color: var(--text); }
+    .page { max-width: 820px; margin: 0 auto; padding: 32px 24px 48px; }
+    .site-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px 24px;
+      margin-bottom: 24px;
+    }
+    .brand { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.03em; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+    nav a { display: inline-block; padding: 8px 0; }
+    nav a[aria-current="page"] { font-weight: 700; }
+    main {
+      padding: clamp(24px, 5vw, 48px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+    }
+    h1 { margin: 0 0 24px; font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.2; letter-spacing: -0.04em; }
+    h2 { margin: 36px 0 12px; font-size: 1.25rem; line-height: 1.35; letter-spacing: -0.02em; }
+    p { margin: 0 0 18px; }
+    ul { margin: 0 0 18px; padding-left: 24px; }
+    li + li { margin-top: 8px; }
+    a { color: var(--accent); text-underline-offset: 0.18em; overflow-wrap: anywhere; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+    .draft-note { color: var(--secondary); padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+    .skip-link { position: absolute; top: 8px; left: 8px; transform: translateY(-200%); padding: 8px 16px; background: var(--surface); z-index: 1; }
+    .skip-link:focus { transform: none; }
+    main > :last-child { margin-bottom: 0; }
+    @media (prefers-color-scheme: dark) {
+      :root { --background: #17171c; --surface: #22222a; --text: #f0f0f5; --secondary: #bbbbca; --accent: #b8b0ff; --border: #41414d; }
+    }
+    @media (max-width: 480px) {
+      .page { padding: 24px 16px 32px; }
+      main { border-radius: 20px; }
+    }
+    @media print {
+      :root { color-scheme: light; --surface: #fff; --text: #000; --secondary: #333; --accent: #000; }
+      body { background: #fff; }
+      .page { max-width: none; padding: 0; }
+      .site-header, .skip-link { display: none; }
+      main { border: 0; padding: 0; }
+      h2 { break-after: avoid; }
+      p, li { orphans: 3; widows: 3; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="page">
+    <header class="site-header">
+      <span class="brand">Zero Hour</span>
+      <nav aria-label="Support and privacy">
+        <a href="support-page-draft.html" aria-current="page">Support</a>
+        <a href="privacy-policy-draft.html">Privacy policy</a>
+      </nav>
+    </header>
+    <main id="content" tabindex="-1">
+      <h1>Zero Hour support — draft for review</h1>
+      <p class="draft-note">This page is ready for Stewart Dunn to review before it is hosted at a public support URL. It has not been published.</p>
+      <p><strong>Zero Hour: Up Next</strong><br>
+        Event &amp; Milestone Tracker</p>
+      <p>Count down to birthdays, trips, anniversaries and personal milestones on iPhone and iPad. Add a Home Screen widget or check your next event on a paired Apple Watch.</p>
+      <h2 id="create-an-event">Create an event</h2>
+      <p>Tap <strong>+</strong>, enter a title, choose a date and time, then pick an icon and colour. Tap <strong>Save</strong>. Zero Hour shows the time remaining in days, hours, minutes and seconds.</p>
+      <h2 id="view-and-edit-events">View and edit events</h2>
+      <p>Tap an event in <strong>All events</strong> to show its countdown. Swipe left or right on the large countdown card to browse upcoming events. Tap the card to edit it, or open the event&#x27;s <strong>…</strong> actions menu and choose <strong>Edit event…</strong>. Use that menu to delete an event.</p>
+      <h2 id="set-an-alarm-or-notification">Set an alarm or notification</h2>
+      <p>In the event editor, enable <strong>Alarm at zero</strong>, <strong>Notification at zero</strong>, or both. Choose a future date and time, then save and allow the requested permission.</p>
+      <p>Alarms can sound through Silent Mode and Focus. Notifications follow your device&#x27;s notification settings. Both are scheduled by the system and can work while Zero Hour is closed.</p>
+      <p>If an alert cannot be saved, read the message in the app and check Zero Hour&#x27;s permissions in Settings. Notification sounds and visibility also depend on your notification and Focus settings. To stop an event&#x27;s future alerts, turn off its alert switches and save, or delete the event.</p>
+      <h2 id="add-a-widget">Add a widget</h2>
+      <p>Touch and hold your Home Screen, choose <strong>Edit → Add Widget</strong>, search for <strong>Zero Hour</strong>, and choose a small or medium <strong>Next event</strong> widget. It displays your earliest upcoming event. Tap it to open that event in the app.</p>
+      <h2 id="use-apple-watch">Use Apple Watch</h2>
+      <p>Install and open the Zero Hour companion on an Apple Watch paired with your iPhone. Add and edit events on the iPhone; the next countdown appears on the Watch as the devices exchange data. Keep the devices paired and connected. iPad does not pair directly with Apple Watch.</p>
+      <h2 id="where-are-events-stored">Where are events stored?</h2>
+      <p>Events are stored locally. Zero Hour has no account or cloud synchronisation service, so separate iPhones and iPads have their own event lists. Widgets use the events saved on the same device. Event information is shared with your paired Apple Watch using Apple&#x27;s WatchConnectivity.</p>
+      <h2 id="requirements">Requirements</h2>
+      <ul>
+        <li>iPhone or iPad running iOS or iPadOS 26 or later.</li>
+        <li>For the Watch companion: watchOS 26 or later and a paired iPhone.</li>
+        <li>System permission is required for each type of alert you enable.</li>
+      </ul>
+      <h2 id="contact">Contact</h2>
+      <p>Email <strong><a href="mailto:appsupport@app.sdmail.net">appsupport@app.sdmail.net</a></strong> for help. Include your device model, operating-system version, and a description of what happened. Do not include private event information unless it is necessary to explain the issue.</p>
+      <p>A privacy policy link must be added here after the reviewed policy is published.</p>
+    </main>
+  </div>
+</body>
+</html>
