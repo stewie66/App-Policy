@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zero Hour privacy policy — draft for review</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f5f5fa;
+      --surface: #ffffff;
+      --text: #20202a;
+      --secondary: #626273;
+      --accent: #5146dc;
+      --border: #dedee9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--background); color: var(--text); }
+    .page { max-width: 820px; margin: 0 auto; padding: 32px 24px 48px; }
+    .site-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px 24px;
+      margin-bottom: 24px;
+    }
+    .brand { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.03em; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+    nav a { display: inline-block; padding: 8px 0; }
+    nav a[aria-current="page"] { font-weight: 700; }
+    main {
+      padding: clamp(24px, 5vw, 48px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+    }
+    h1 { margin: 0 0 24px; font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.2; letter-spacing: -0.04em; }
+    h2 { margin: 36px 0 12px; font-size: 1.25rem; line-height: 1.35; letter-spacing: -0.02em; }
+    p { margin: 0 0 18px; }
+    ul { margin: 0 0 18px; padding-left: 24px; }
+    li + li { margin-top: 8px; }
+    a { color: var(--accent); text-underline-offset: 0.18em; overflow-wrap: anywhere; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+    .draft-note { color: var(--secondary); padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+    .skip-link { position: absolute; top: 8px; left: 8px; transform: translateY(-200%); padding: 8px 16px; background: var(--surface); z-index: 1; }
+    .skip-link:focus { transform: none; }
+    main > :last-child { margin-bottom: 0; }
+    @media (prefers-color-scheme: dark) {
+      :root { --background: #17171c; --surface: #22222a; --text: #f0f0f5; --secondary: #bbbbca; --accent: #b8b0ff; --border: #41414d; }
+    }
+    @media (max-width: 480px) {
+      .page { padding: 24px 16px 32px; }
+      main { border-radius: 20px; }
+    }
+    @media print {
+      :root { color-scheme: light; --surface: #fff; --text: #000; --secondary: #333; --accent: #000; }
+      body { background: #fff; }
+      .page { max-width: none; padding: 0; }
+      .site-header, .skip-link { display: none; }
+      main { border: 0; padding: 0; }
+      h2 { break-after: avoid; }
+      p, li { orphans: 3; widows: 3; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="page">
+    <header class="site-header">
+      <span class="brand">Zero Hour</span>
+      <nav aria-label="Support and privacy">
+        <a href="support-page-draft.html">Support</a>
+        <a href="privacy-policy-draft.html" aria-current="page">Privacy policy</a>
+      </nav>
+    </header>
+    <main id="content" tabindex="-1">
+      <h1>Zero Hour privacy policy</h1>
+        <strong>App:</strong> Zero Hour: Up Next (installed as Zero Hour)<br>
+        <strong>Privacy contact:</strong> appsupport@app.sdmail.net</p>
+      <h2 id="data-in-the-app">Data in the app</h2>
+      <p>Zero Hour helps you track events and milestones. Your event titles, dates, icon and colour choices, and alert settings are stored locally on your device. No account is needed.</p>
+      <p>Zero Hour does not operate a server that receives your events. It does not include advertising, analytics, crash-reporting or tracking services, and does not sell your information.</p>
+      <h2 id="widgets-and-apple-watch">Widgets and Apple Watch</h2>
+      <p>The app shares event information locally with its Home Screen widget through an App Group. On iPhone, it also sends event information to your paired Apple Watch through Apple&#x27;s WatchConnectivity framework so the Watch companion can display your next countdown. The developer does not receive this information. The app does not provide iCloud synchronisation between separate iPhones or iPads.</p>
+      <h2 id="alarms-and-notifications">Alarms and notifications</h2>
+      <p>If you enable an alarm or notification for an event, the app asks for the appropriate permission and supplies the event title and time to Apple&#x27;s on-device alert services. Event titles may be visible in notifications or alarms, depending on your device settings. These alerts do not use a developer-operated remote push service.</p>
+      <p>You can switch off alerts in the event editor and manage permissions in your device&#x27;s Settings.</p>
+      <h2 id="data-control-and-backups">Data control and backups</h2>
+      <p>You can edit or delete events in Zero Hour. Your device&#x27;s operating system may include local app data in device backups under the backup settings you choose. Apple handles its services and backups under its own policies. Zero Hour does not offer a developer account, server-side event storage, or an account-deletion process.</p>
+      <h2 id="contacting-support">Contacting support</h2>
+      <p>If you email the developer, your email address and the information you choose to send are received to respond to your request. Please avoid sending sensitive event information. The app does not automatically transmit your events, diagnostics or device information when you contact support.</p>
+      <h2 id="children">Children</h2>
+      <p>Zero Hour does not require personal information or an account to use its features. The developer does not collect information from app use, including from children. If you believe a child has sent personal information directly by email, contact the developer.</p>
+      <h2 id="changes-and-contact">Changes and contact</h2>
+      <p>If the app&#x27;s data practices change, this policy will be updated. For questions about privacy, contact support at appsupport@app.sdmail.net.</p>
+    </main>
+  </div>
+</body>
+</html>
