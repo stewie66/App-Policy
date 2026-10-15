@@ -41,7 +41,7 @@
     h1 { margin: 0 0 24px; font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.2; letter-spacing: -0.04em; }
     h2 { margin: 36px 0 12px; font-size: 1.25rem; line-height: 1.35; letter-spacing: -0.02em; }
     p { margin: 0 0 18px; }
-    ul { margin: 0 0 18px; padding-left: 24px; }
+    ul, ol { margin: 0 0 18px; padding-left: 24px; }
     li + li { margin-top: 8px; }
     a { color: var(--accent); text-underline-offset: 0.18em; overflow-wrap: anywhere; }
     a:hover { text-decoration-thickness: 2px; }
@@ -73,27 +73,41 @@
   <div class="page">
     <header class="site-header">
       <span class="brand">Zero Hour</span>
+      <nav aria-label="Support and privacy">
+        <a href="https://stewie66.github.io/App-Policy/Zero-Hour-Support-Page.html">Support</a>
+        <a href="https://stewie66.github.io/App-Policy/Zero-Hour-Privacy-Page.html" aria-current="page">Privacy policy</a>
+      </nav>
     </header>
     <main id="content" tabindex="-1">
       <h1>Zero Hour privacy policy</h1>
-        <strong>App:</strong> Zero Hour: Up Next (installed as Zero Hour)<br>
-        <strong>Privacy contact:</strong> appsupport@app.sdmail.net</p>
-      <h2 id="data-in-the-app">Data in the app</h2>
-      <p>Zero Hour helps you track events and milestones. Your event titles, dates, icon and colour choices, and alert settings are stored locally on your device. No account is needed.</p>
-      <p>Zero Hour does not operate a server that receives your events. It does not include advertising, analytics, crash-reporting or tracking services, and does not sell your information.</p>
+      <p><strong>Updated:</strong> 15 October 2026</p>
+      <p><strong>App:</strong> Zero Hour: Up Next (installed as Zero Hour)<br>
+<strong>Developer:</strong> Stewart Dunn<br>
+<strong>Privacy contact:</strong> <a href="mailto:appsupport@app.sdmail.net">appsupport@app.sdmail.net</a></p>
+      <h2 id="your-events">Your events</h2>
+      <p>Zero Hour stores your event titles, dates and times, icon and colour choices, and device-specific alert settings locally on your device. You can use the app without creating a Zero Hour account or signing in to iCloud.</p>
+      <p>The app has no advertising, analytics or third-party crash-reporting SDKs and does not track you across other apps or websites. The developer does not receive your event content through the app or sell it.</p>
+      <h2 id="optional-icloud-syncing">Optional iCloud syncing</h2>
+      <p>When iCloud is available and enabled for Zero Hour, the app automatically syncs event titles, dates and times, icons and colours between your iPhone, iPad, Mac and Apple Vision Pro using the same Apple Account. Existing local events can be uploaded when syncing first becomes available. Changes made offline are saved locally and queued for syncing when a connection and iCloud are available.</p>
+      <p>Synced events are stored using Apple&#39;s CloudKit service in your private iCloud database. Zero Hour does not publish them in a public database or share them with other people. Apple operates the iCloud infrastructure; the developer does not operate an event-storage server. Apple&#39;s handling of its services is described in <a href="https://www.apple.com/legal/privacy/">Apple&#39;s privacy policy</a>.</p>
+      <p>Syncing also uses event identifiers, modification dates, revision identifiers and deletion markers to match changes between devices. An app-specific iCloud account identifier is used locally to keep account caches separate. Zero Hour does not ask for your Apple Account password. CloudKit uses background push notifications to signal changes; these are separate from the event alerts you choose.</p>
+      <p>Alarm and notification choices and their scheduling identifiers do not sync through iCloud. Set alerts separately on each device. If an event&#39;s date changes through sync, the app updates alerts already enabled on that device when it processes the change.</p>
       <h2 id="widgets-and-apple-watch">Widgets and Apple Watch</h2>
-      <p>The app shares event information locally with its Home Screen widget through an App Group. On iPhone, it also sends event information to your paired Apple Watch through Apple&#x27;s WatchConnectivity framework so the Watch companion can display your next countdown. The developer does not receive this information. The app does not provide iCloud synchronisation between separate iPhones or iPads.</p>
+      <p>On iPhone and iPad, Zero Hour shares a local copy of event information with its Home Screen widgets through Apple&#39;s App Group storage. The iPhone app also sends event information to its paired Apple Watch through Apple&#39;s WatchConnectivity service so the companion can show your next countdown. The Watch companion does not sync directly with iCloud. These features do not send your events to the developer.</p>
       <h2 id="alarms-and-notifications">Alarms and notifications</h2>
-      <p>If you enable an alarm or notification for an event, the app asks for the appropriate permission and supplies the event title and time to Apple&#x27;s on-device alert services. Event titles may be visible in notifications or alarms, depending on your device settings. These alerts do not use a developer-operated remote push service.</p>
-      <p>You can switch off alerts in the event editor and manage permissions in your device&#x27;s Settings.</p>
-      <h2 id="data-control-and-backups">Data control and backups</h2>
-      <p>You can edit or delete events in Zero Hour. Your device&#x27;s operating system may include local app data in device backups under the backup settings you choose. Apple handles its services and backups under its own policies. Zero Hour does not offer a developer account, server-side event storage, or an account-deletion process.</p>
+      <p>If you enable an event alert, Zero Hour requests the relevant permission and supplies the event title and time to Apple&#39;s on-device alert services. iPhone and iPad support alarms and notifications; the native Mac and Apple Vision Pro apps support notifications. Event titles may be visible in alerts, depending on your device settings.</p>
+      <p>Turn off an event&#39;s alert switches in the app or manage permissions in the device&#39;s settings. Event alerts are scheduled locally, separately from CloudKit&#39;s background sync notifications.</p>
+      <h2 id="retention-deletion-and-your-controls">Retention, deletion and your controls</h2>
+      <p>Your events remain saved until you edit or delete them or remove the stored app data. To delete a synced event, delete it in Zero Hour while using the relevant Apple Account and let your devices sync. When its deletion uploads, the event title, date, icon and colour are removed from the synced record. A marker containing the event identity and revision metadata remains without an automatic expiry to prevent an offline device from restoring the deleted event. Copies on disconnected devices remain until those devices process the deletion or their local data is removed.</p>
+      <p>You can stop future syncing by disabling iCloud access for Zero Hour in your device&#39;s settings. This does not itself delete existing iCloud data. Signing out, switching Apple Accounts or uninstalling the app also does not itself delete the events already stored in iCloud. Where available, Apple&#39;s iCloud storage settings let you manage the app&#39;s stored iCloud data.</p>
+      <p>Signing out can leave a local event cache available on that device. The app keeps caches for previously used Apple Accounts separate; switching accounts does not transfer the previous account&#39;s events to the new account. Cached data can remain on the device until it is updated or removed. Your operating system may also include local app data in backups. Apple controls its services&#39; backup and retention practices under its own policies.</p>
       <h2 id="contacting-support">Contacting support</h2>
-      <p>If you email the developer, your email address and the information you choose to send are received to respond to your request. Please avoid sending sensitive event information. The app does not automatically transmit your events, diagnostics or device information when you contact support.</p>
-      <h2 id="children">Children</h2>
-      <p>Zero Hour does not require personal information or an account to use its features. The developer does not collect information from app use, including from children. If you believe a child has sent personal information directly by email, contact the developer.</p>
-      <h2 id="changes-and-contact">Changes and contact</h2>
-      <p>If the app&#x27;s data practices change, this policy will be updated. For questions about privacy, contact support at appsupport@app.sdmail.net.</p>
+      <p>If you email support, the developer and the email service used to receive support messages process your email address and any information you choose to send to respond to your request. Please avoid sending private event information unless it is needed to explain the issue. The app does not automatically attach your events or diagnostics.</p>
+      <p>Support correspondence is kept only for as long as needed to respond to and resolve your request, then deleted. To request deletion of a support message, contact <a href="mailto:appsupport@app.sdmail.net">appsupport@app.sdmail.net</a>.</p>
+      <h2 id="visiting-the-support-and-privacy-website">Visiting the support and privacy website</h2>
+      <p>These pages are hosted on GitHub Pages. GitHub logs visitors&#39; IP addresses for security purposes, including when you open the policy from the app. See <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub&#39;s hosting data-collection information</a>. This is separate from event syncing and does not send your event content to the website.</p>
+      <h2 id="children-and-policy-changes">Children and policy changes</h2>
+      <p>Zero Hour does not require personal contact information to use its countdown features. If a child has sent personal information directly by email, contact support. This policy will be updated if the app&#39;s data practices change. For privacy questions, contact <a href="mailto:appsupport@app.sdmail.net">appsupport@app.sdmail.net</a>.</p>
     </main>
   </div>
 </body>

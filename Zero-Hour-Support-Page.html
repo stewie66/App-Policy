@@ -41,7 +41,7 @@
     h1 { margin: 0 0 24px; font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.2; letter-spacing: -0.04em; }
     h2 { margin: 36px 0 12px; font-size: 1.25rem; line-height: 1.35; letter-spacing: -0.02em; }
     p { margin: 0 0 18px; }
-    ul { margin: 0 0 18px; padding-left: 24px; }
+    ul, ol { margin: 0 0 18px; padding-left: 24px; }
     li + li { margin-top: 8px; }
     a { color: var(--accent); text-underline-offset: 0.18em; overflow-wrap: anywhere; }
     a:hover { text-decoration-thickness: 2px; }
@@ -73,33 +73,66 @@
   <div class="page">
     <header class="site-header">
       <span class="brand">Zero Hour</span>
+      <nav aria-label="Support and privacy">
+        <a href="https://stewie66.github.io/App-Policy/Zero-Hour-Support-Page.html" aria-current="page">Support</a>
+        <a href="https://stewie66.github.io/App-Policy/Zero-Hour-Privacy-Page.html">Privacy policy</a>
+      </nav>
     </header>
     <main id="content" tabindex="-1">
+      <h1>Zero Hour support</h1>
       <p><strong>Zero Hour: Up Next</strong><br>
-        Event &amp; Milestone Tracker</p>
-      <p>Count down to birthdays, trips, anniversaries and personal milestones on iPhone and iPad. Add a Home Screen widget or check your next event on a paired Apple Watch.</p>
+Event &amp; Milestone Tracker</p>
+      <p>Count down to birthdays, trips, shopping events and personal milestones on iPhone, including iPhone Duo, iPad, Mac and Apple Vision Pro. Add an iPhone or iPad Home Screen widget or check your next event on a paired Apple Watch.</p>
       <h2 id="create-an-event">Create an event</h2>
-      <p>Tap <strong>+</strong>, enter a title, choose a date and time, then pick an icon and colour. Tap <strong>Save</strong>. Zero Hour shows the time remaining in days, hours, minutes and seconds.</p>
-      <h2 id="view-and-edit-events">View and edit events</h2>
-      <p>Tap an event in <strong>All events</strong> to show its countdown. Swipe left or right on the large countdown card to browse upcoming events. Tap the card to edit it, or open the event&#x27;s <strong>…</strong> actions menu and choose <strong>Edit event…</strong>. Use that menu to delete an event.</p>
+      <p>Choose <strong>Add event (+)</strong>, enter a title, choose a date and time, then pick an icon and colour. Choose <strong>Save</strong>. Zero Hour shows the time remaining in days, hours, minutes and seconds. Shopping is one of the ten available icons.</p>
+      <h2 id="view-edit-or-delete-an-event">View, edit or delete an event</h2>
+      <p>On iPhone, iPad and Mac, select an event in <strong>All events</strong> to show its countdown. Swipe horizontally on the large countdown card to browse events, select the card to edit, or open the event&#39;s <strong>…</strong> actions menu and choose <strong>Edit event…</strong>. Use that menu to delete the event.</p>
+      <p>On Apple Vision Pro, select an event in the sidebar. Use the toolbar to edit, delete or <strong>Open countdown window</strong>. Separate countdown windows can be placed in your space. Search and the sidebar filter help you find events.</p>
+      <p>Deleting an event also deletes it from your other devices when they sync using the same Apple Account.</p>
+      <h2 id="sync-events-with-icloud">Sync events with iCloud</h2>
+      <p>Events sync automatically between iPhone, iPad, the native Mac app and Apple Vision Pro through your private iCloud database. There is no separate Zero Hour account or manual sync button.</p>
+      <ol>
+      <li>Sign in to the same Apple Account on each device.</li>
+      <li>Enable iCloud access for Zero Hour in the device&#39;s settings, and make sure iCloud has available storage.</li>
+      <li>Open Zero Hour on each device with an internet connection. Existing local events join that account&#39;s synced list when syncing becomes available.</li>
+      </ol>
+      <p>Event titles, dates and times, icons and colours sync. Alarm and notification choices stay separate on each device. Offline edits are saved locally and sync when iCloud and a connection are available. Changes may take time to appear; background delivery depends on the system.</p>
+      <p>If the same event is edited offline on multiple devices, the app resolves competing edits using their modification dates; a deletion takes precedence over a conflicting edit. Sync is not a version-history or backup feature. To avoid competing edits, let devices sync before editing the same event again.</p>
+      <h2 id="if-events-are-not-syncing">If events are not syncing</h2>
+      <ul>
+      <li>Check that each device uses the same Apple Account and that iCloud is enabled for Zero Hour.</li>
+      <li>Check the internet connection and available iCloud storage.</li>
+      <li>Open Zero Hour on each device and allow time for changes to arrive. There is no need to enable an event notification to sync.</li>
+      <li>Install the latest app version on every device. Older versions may not understand new event icons such as Shopping.</li>
+      <li>If a problem continues, contact support before resetting or removing app data, especially if a device has changes that have not synced.</li>
+      </ul>
+      <p>Widgets update from the local events on their own device after the host app processes changes. The Watch follows its paired iPhone; neither is an independent source of iCloud updates.</p>
       <h2 id="set-an-alarm-or-notification">Set an alarm or notification</h2>
-      <p>In the event editor, enable <strong>Alarm at zero</strong>, <strong>Notification at zero</strong>, or both. Choose a future date and time, then save and allow the requested permission.</p>
-      <p>Alarms can sound through Silent Mode and Focus. Notifications follow your device&#x27;s notification settings. Both are scheduled by the system and can work while Zero Hour is closed.</p>
-      <p>If an alert cannot be saved, read the message in the app and check Zero Hour&#x27;s permissions in Settings. Notification sounds and visibility also depend on your notification and Focus settings. To stop an event&#x27;s future alerts, turn off its alert switches and save, or delete the event.</p>
-      <h2 id="add-a-widget">Add a widget</h2>
-      <p>Touch and hold your Home Screen, choose <strong>Edit → Add Widget</strong>, search for <strong>Zero Hour</strong>, and choose a small or medium <strong>Next event</strong> widget. It displays your earliest upcoming event. Tap it to open that event in the app.</p>
+      <p>In the event editor, find <strong>Alerts on this device</strong>. On iPhone and iPad, choose <strong>Alarm at zero</strong>, <strong>Notification at zero</strong>, or both. On Mac and Apple Vision Pro, choose <strong>Notification at zero</strong>. Choose a future time, save, and allow the requested permission.</p>
+      <p>On iPhone and iPad, alarms can sound through Silent Mode and Focus. Notifications follow the device&#39;s notification and Focus settings. Alerts are scheduled by the operating system and can work while Zero Hour is closed.</p>
+      <p>Enable alerts separately on each device where you want them. After a synced date change, alerts already enabled on that device are updated when the app processes the change. To stop an alert, turn off its switch and save, or delete the event. If an alert cannot be saved, read the app&#39;s message and check system permissions.</p>
+      <h2 id="add-a-home-screen-widget">Add a Home Screen widget</h2>
+      <p>On iPhone or iPad, touch and hold the Home Screen, choose <strong>Edit → Add Widget</strong>, search for <strong>Zero Hour</strong>, and choose a small or medium <strong>Next event</strong> widget. It displays your earliest upcoming event. Select it to open that event in the app.</p>
       <h2 id="use-apple-watch">Use Apple Watch</h2>
-      <p>Install and open the Zero Hour companion on an Apple Watch paired with your iPhone. Add and edit events on the iPhone; the next countdown appears on the Watch as the devices exchange data. Keep the devices paired and connected. iPad does not pair directly with Apple Watch.</p>
-      <h2 id="where-are-events-stored">Where are events stored?</h2>
-      <p>Events are stored locally. Zero Hour has no account or cloud synchronisation service, so separate iPhones and iPads have their own event lists. Widgets use the events saved on the same device. Event information is shared with your paired Apple Watch using Apple&#x27;s WatchConnectivity.</p>
+      <p>Install and open the Zero Hour companion on an Apple Watch paired with your iPhone. Create and edit events in the main app. Events reach the Watch through its paired iPhone using Apple&#39;s WatchConnectivity service; the companion displays the next countdown and does not connect directly to iCloud. Keep the devices paired and connected. iPad, Mac and Apple Vision Pro do not pair directly with this Watch companion.</p>
+      <h2 id="use-iphone-duo-or-mac">Use iPhone Duo or Mac</h2>
+      <p>On iPhone Duo, the layout adapts between the outer display, the opened inner display and partially folded positions. Your selected event and an in-progress edit stay with you when folding or unfolding.</p>
+      <p>On Mac, install the native Mac app. The countdown and event list appear side by side when the window has enough room. Use <strong>Command-N</strong> to create an event.</p>
+      <h2 id="manage-or-remove-your-data">Manage or remove your data</h2>
+      <p>You can use Zero Hour locally without iCloud. To stop future syncing, disable iCloud access for Zero Hour in the device&#39;s settings. Doing so does not delete data already in iCloud. Signing out, switching accounts or uninstalling also does not erase existing iCloud data. Signing out can leave an event cache on the device; caches for different Apple Accounts are kept separate.</p>
+      <p>To remove a synced event, delete it in Zero Hour while using the relevant Apple Account, then let your devices sync. Offline copies update when they next connect. A deletion marker remains without the event content to stop an old offline copy from restoring the event. Where available, Apple&#39;s iCloud storage settings let you manage the app&#39;s stored iCloud data. See the <a href="https://stewie66.github.io/App-Policy/Zero-Hour-Privacy-Page.html">privacy policy</a> for details.</p>
       <h2 id="requirements">Requirements</h2>
       <ul>
-        <li>iPhone or iPad running iOS or iPadOS 26 or later.</li>
-        <li>For the Watch companion: watchOS 26 or later and a paired iPhone.</li>
-        <li>System permission is required for each type of alert you enable.</li>
+      <li>iPhone or iPad: iOS or iPadOS 26 or later. Full iPhone Duo adaptation requires iOS 27.1 or later.</li>
+      <li>Native Mac app: macOS 26 or later.</li>
+      <li>Native Apple Vision Pro app: visionOS 26 or later.</li>
+      <li>Watch companion: watchOS 26 or later and a paired iPhone.</li>
+      <li>Syncing: the same Apple Account, iCloud access for Zero Hour, available iCloud storage and an internet connection.</li>
+      <li>Alerts: system permission for each type enabled on each device.</li>
       </ul>
-      <h2 id="contact">Contact</h2>
-      <p>Email <strong><a href="mailto:appsupport@app.sdmail.net">appsupport@app.sdmail.net</a></strong> for help. Include your device model, operating-system version, and a description of what happened. Do not include private event information unless it is necessary to explain the issue.</p>
+      <h2 id="contact-and-privacy">Contact and privacy</h2>
+      <p>Email <a href="mailto:appsupport@app.sdmail.net">appsupport@app.sdmail.net</a> for help. Include your device model, operating-system version, app version/build and a description of what happened. If the issue concerns syncing, say which devices are affected and whether they use a prerelease or development version. Do not send your Apple Account password or private event information unless the latter is needed to explain the issue.</p>
+      <p>Read the <a href="https://stewie66.github.io/App-Policy/Zero-Hour-Privacy-Page.html">Zero Hour privacy policy</a>.</p>
     </main>
   </div>
 </body>
