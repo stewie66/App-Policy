@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agendex support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f5f5fa;
+      --surface: #ffffff;
+      --text: #20202a;
+      --secondary: #626273;
+      --accent: #0b6b63;
+      --border: #dedee9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--background); color: var(--text); }
+    .page { max-width: 820px; margin: 0 auto; padding: 32px 24px 48px; }
+    .site-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px 24px;
+      margin-bottom: 24px;
+    }
+    .brand { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.03em; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+    nav a { display: inline-block; padding: 8px 0; }
+    nav a[aria-current="page"] { font-weight: 700; }
+    main {
+      padding: clamp(24px, 5vw, 48px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+    }
+    h1 { margin: 0 0 24px; font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.2; letter-spacing: -0.04em; }
+    h2 { margin: 36px 0 12px; font-size: 1.25rem; line-height: 1.35; letter-spacing: -0.02em; }
+    p { margin: 0 0 18px; }
+    ul, ol { margin: 0 0 18px; padding-left: 24px; }
+    li + li { margin-top: 8px; }
+    a { color: var(--accent); text-underline-offset: 0.18em; overflow-wrap: anywhere; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+    .draft-note { color: var(--secondary); padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+    .skip-link { position: absolute; top: 8px; left: 8px; transform: translateY(-200%); padding: 8px 16px; background: var(--surface); z-index: 1; }
+    .skip-link:focus { transform: none; }
+    main > :last-child { margin-bottom: 0; }
+    @media (prefers-color-scheme: dark) {
+      :root { --background: #17171c; --surface: #22222a; --text: #f0f0f5; --secondary: #bbbbca; --accent: #74d6c9; --border: #41414d; }
+    }
+    @media (max-width: 480px) {
+      .page { padding: 24px 16px 32px; }
+      main { border-radius: 20px; }
+    }
+    @media print {
+      :root { color-scheme: light; --surface: #fff; --text: #000; --secondary: #333; --accent: #000; }
+      body { background: #fff; }
+      .page { max-width: none; padding: 0; }
+      .site-header, .skip-link { display: none; }
+      main { border: 0; padding: 0; }
+      h2 { break-after: avoid; }
+      p, li { orphans: 3; widows: 3; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="page">
+    <header class="site-header">
+      <span class="brand">Agendex</span>
+      <nav aria-label="Support and privacy">
+        <a href="https://stewie66.github.io/App-Policy/Agendex-Support-Page.html" aria-current="page">Support</a>
+        <a href="https://stewie66.github.io/App-Policy/Agendex-Privacy-Page.html">Privacy policy</a>
+      </nav>
+    </header>
+    <main id="content" tabindex="-1">
+      <h1>Agendex support</h1>
+      <p><strong>Agendex Calendar Planner</strong><br>
+Diary, year planner &amp; to-dos</p>
+      <p>Agendex brings your appointments, birthdays and to-dos together in a paper-style diary on iPhone, including iPhone Duo, iPad and Mac. A full, searchable user guide is built into the app: on iPhone and iPad open <strong>Settings › Help › Agendex Help</strong>; on Mac choose <strong>Help › Agendex Help</strong> (Command-?).</p>
+      <h2 id="getting-started">Getting started</h2>
+      <ol>
+      <li>Choose where your planner is stored in <strong>Settings › Calendar Storage</strong>: <strong>Local Storage</strong> keeps everything on this device; <strong>Apple Calendar</strong> uses your existing calendars and reminders.</li>
+      <li>Add an event with <strong>+</strong> in Agenda, birthdays in Anniversaries, and tasks in To-dos.</li>
+      <li>If you use Local Storage, make a backup from time to time in <strong>Settings › Back Up &amp; Export</strong>.</li>
+      </ol>
+      <h2 id="common-questions">Common questions</h2>
+      <ul>
+      <li><strong>I can&#39;t see my calendars or reminders.</strong> Choose Apple Calendar in Settings › Calendar Storage and allow full access. If you declined before, turn access back on in your device&#39;s Privacy &amp; Security settings under Calendars and Reminders.</li>
+      <li><strong>My events disappeared after switching storage.</strong> Each storage keeps its own data. Switch back to see them, or move them with a complete backup and Import or Restore.</li>
+      <li><strong>Some events aren&#39;t showing.</strong> Check the Filter button in Agenda; a number on it means some calendars or tags are hidden.</li>
+      <li><strong>I can&#39;t edit an event.</strong> It&#39;s in a read-only calendar, such as a subscription or an invitation from someone else. Duplicate it into one of your own calendars.</li>
+      <li><strong>Week view or the year grid is missing.</strong> They need a wide window: iPad in landscape, iPhone Duo opened in landscape, or Mac.</li>
+      <li><strong>Alerts don&#39;t appear.</strong> With Local Storage, allow notifications for Agendex in your device&#39;s settings.</li>
+      <li><strong>Changes from another device haven&#39;t arrived.</strong> Choose Refresh Now in Settings. Your calendar service decides when changes are delivered.</li>
+      </ul>
+      <h2 id="backup">Backup, export and import</h2>
+      <p>Agendex backs up complete calendars to a standard iCalendar (.ics) file and imports .ics files from other apps. Local Storage data stays on the device, so back it up before deleting Agendex or changing devices.</p>
+      <h2 id="requirements">Requirements</h2>
+      <ul>
+      <li>iPhone or iPad: iOS or iPadOS 26 or later. iPhone Duo adaptation requires iOS 27.1 or later.</li>
+      <li>Mac: macOS 26 or later.</li>
+      <li>Apple Calendar storage: full access to Calendars, and to Reminders for to-dos.</li>
+      </ul>
+      <h2 id="contact-and-privacy">Contact and privacy</h2>
+      <p>Email <a href="mailto:appsupport@app.sdmail.net">appsupport@app.sdmail.net</a> for help. Include your device model, operating-system version, the app version and build, which storage you use, and what happened. Please don&#39;t send private calendar details unless they&#39;re needed to explain the issue.</p>
+      <p>Read the <a href="https://stewie66.github.io/App-Policy/Agendex-Privacy-Page.html">Agendex privacy policy</a>.</p>
+    </main>
+  </div>
+</body>
+</html>
