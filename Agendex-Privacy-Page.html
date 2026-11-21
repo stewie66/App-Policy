@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agendex privacy policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f5f5fa;
+      --surface: #ffffff;
+      --text: #20202a;
+      --secondary: #626273;
+      --accent: #0b6b63;
+      --border: #dedee9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--background); color: var(--text); }
+    .page { max-width: 820px; margin: 0 auto; padding: 32px 24px 48px; }
+    .site-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px 24px;
+      margin-bottom: 24px;
+    }
+    .brand { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.03em; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+    nav a { display: inline-block; padding: 8px 0; }
+    nav a[aria-current="page"] { font-weight: 700; }
+    main {
+      padding: clamp(24px, 5vw, 48px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+    }
+    h1 { margin: 0 0 24px; font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.2; letter-spacing: -0.04em; }
+    h2 { margin: 36px 0 12px; font-size: 1.25rem; line-height: 1.35; letter-spacing: -0.02em; }
+    p { margin: 0 0 18px; }
+    ul, ol { margin: 0 0 18px; padding-left: 24px; }
+    li + li { margin-top: 8px; }
+    a { color: var(--accent); text-underline-offset: 0.18em; overflow-wrap: anywhere; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+    .draft-note { color: var(--secondary); padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+    .skip-link { position: absolute; top: 8px; left: 8px; transform: translateY(-200%); padding: 8px 16px; background: var(--surface); z-index: 1; }
+    .skip-link:focus { transform: none; }
+    main > :last-child { margin-bottom: 0; }
+    @media (prefers-color-scheme: dark) {
+      :root { --background: #17171c; --surface: #22222a; --text: #f0f0f5; --secondary: #bbbbca; --accent: #74d6c9; --border: #41414d; }
+    }
+    @media (max-width: 480px) {
+      .page { padding: 24px 16px 32px; }
+      main { border-radius: 20px; }
+    }
+    @media print {
+      :root { color-scheme: light; --surface: #fff; --text: #000; --secondary: #333; --accent: #000; }
+      body { background: #fff; }
+      .page { max-width: none; padding: 0; }
+      .site-header, .skip-link { display: none; }
+      main { border: 0; padding: 0; }
+      h2 { break-after: avoid; }
+      p, li { orphans: 3; widows: 3; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="page">
+    <header class="site-header">
+      <span class="brand">Agendex</span>
+      <nav aria-label="Support and privacy">
+        <a href="https://stewie66.github.io/App-Policy/Agendex-Support-Page.html">Support</a>
+        <a href="https://stewie66.github.io/App-Policy/Agendex-Privacy-Page.html" aria-current="page">Privacy policy</a>
+      </nav>
+    </header>
+    <main id="content" tabindex="-1">
+      <h1>Agendex privacy policy</h1>
+      <p><strong>Updated:</strong> 22 November 2026</p>
+      <p><strong>App:</strong> Agendex Calendar Planner (installed as Agendex)<br>
+<strong>Developer:</strong> Stewart Dunn<br>
+<strong>Privacy contact:</strong> <a href="mailto:appsupport@app.sdmail.net">appsupport@app.sdmail.net</a></p>
+      <h2 id="summary">Summary</h2>
+      <p>Agendex has no account, no server, no advertising, no analytics and no third-party SDKs. It does not track you across other apps or websites. The developer does not receive, store or sell your events, anniversaries, to-dos or any other content you enter.</p>
+      <h2 id="local-storage">Local Storage</h2>
+      <p>When you use <strong>Local Storage</strong> (the default), your events, anniversaries, to-dos, tags, alert choices and meeting invitee lists are saved only in the app&#39;s storage on your device. They are not synced to your other devices. Your operating system may include this data in device backups under Apple&#39;s backup settings.</p>
+      <h2 id="apple-calendar-and-reminders">Apple Calendar and Reminders</h2>
+      <p>If you choose <strong>Apple Calendar</strong> storage, Agendex asks for full access to Calendars and Reminders so it can show, create, edit, back up and import your events and to-dos. Agendex reads and writes them on your device through Apple&#39;s EventKit framework. Changes sync through the calendar accounts you have set up on the device, such as iCloud, Google or Exchange, under those providers&#39; own policies. Agendex saves tag information in an event&#39;s notes so tags travel with the event. You can revoke access at any time in your device&#39;s privacy settings.</p>
+      <h2 id="tag-colours">Tag colours and iCloud</h2>
+      <p>Agendex syncs your tag names and the colours you choose for them between devices signed in to the same Apple Account, using Apple&#39;s iCloud key-value storage. No event content is included. Whether tag names and colour backgrounds are shown is a separate setting kept on each device. See <a href="https://www.apple.com/legal/privacy/">Apple&#39;s privacy policy</a> for how Apple handles iCloud data.</p>
+      <h2 id="meeting-invitations">Meeting invitations</h2>
+      <p>To send meeting invitations, you can enter your name and email address in Settings. They are stored on your device and included in invitations so invitees know who invited them. When you invite people, Agendex prepares an email with a standard calendar (.ics) attachment containing the meeting details and the names and email addresses of the people invited. You review and send the email yourself through your mail app; Agendex does not send email on its own. When you open an invitation or reply you received, Agendex reads it on your device and records responses locally.</p>
+      <h2 id="widgets-alerts-and-motion">Widgets, alerts and motion</h2>
+      <p>On iPhone and iPad, Agendex shares a local copy of upcoming events and to-dos with its Home Screen widgets through Apple&#39;s App Group storage on your device. If you set alerts while using Local Storage, Agendex schedules local notifications on your device containing the item&#39;s title and time. On iPhone Duo, Agendex uses motion data on the device only to keep the planner the right way up in tent mode; motion data is not stored or shared.</p>
+      <h2 id="backups-and-files">Backups and exported files</h2>
+      <p>Backups and exports are saved as iCalendar (.ics) files in a location you choose. They contain the events, anniversaries and to-dos you include. Agendex does not upload them anywhere; anyone you share a file with can read its contents.</p>
+      <h2 id="deleting-your-data">Deleting your data</h2>
+      <p>Delete items in Agendex at any time. Deleting the app removes its Local Storage data from the device, so make a backup first if you want to keep it. Events and to-dos stored in Apple Calendar and Reminders remain in those accounts until you delete them there. Tag colours stored in iCloud can be managed through Apple&#39;s iCloud storage settings where available.</p>
+      <h2 id="contacting-support">Contacting support</h2>
+      <p>If you email support, the developer and the email service used to receive support messages process your email address and anything you choose to send in order to respond. Please avoid sending private calendar details unless they are needed to explain the issue. Support correspondence is kept only as long as needed to resolve your request, then deleted. To request deletion of a support message, contact <a href="mailto:appsupport@app.sdmail.net">appsupport@app.sdmail.net</a>.</p>
+      <h2 id="website">Visiting this website</h2>
+      <p>These pages are hosted on GitHub Pages. GitHub logs visitors&#39; IP addresses for security purposes, including when you open the policy from the app. See <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub&#39;s hosting data-collection information</a>.</p>
+      <h2 id="children-and-changes">Children and policy changes</h2>
+      <p>Agendex does not require personal information to use its planning features. If a child has sent personal information by email, contact support. This policy will be updated if the app&#39;s data practices change. For privacy questions, contact <a href="mailto:appsupport@app.sdmail.net">appsupport@app.sdmail.net</a>.</p>
+    </main>
+  </div>
+</body>
+</html>
