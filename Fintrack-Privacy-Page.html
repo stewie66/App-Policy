@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fintrack privacy policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f5f5fa;
+      --surface: #ffffff;
+      --text: #20202a;
+      --secondary: #626273;
+      --accent: #2f6b4a;
+      --border: #dedee9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--background); color: var(--text); }
+    .page { max-width: 820px; margin: 0 auto; padding: 32px 24px 48px; }
+    .site-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px 24px;
+      margin-bottom: 24px;
+    }
+    .brand { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.03em; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+    nav a { display: inline-block; padding: 8px 0; }
+    nav a[aria-current="page"] { font-weight: 700; }
+    main {
+      padding: clamp(24px, 5vw, 48px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+    }
+    h1 { margin: 0 0 24px; font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.2; letter-spacing: -0.04em; }
+    h2 { margin: 36px 0 12px; font-size: 1.25rem; line-height: 1.35; letter-spacing: -0.02em; }
+    p { margin: 0 0 18px; }
+    ul, ol { margin: 0 0 18px; padding-left: 24px; }
+    li + li { margin-top: 8px; }
+    a { color: var(--accent); text-underline-offset: 0.18em; overflow-wrap: anywhere; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+    .draft-note { color: var(--secondary); padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+    .skip-link { position: absolute; top: 8px; left: 8px; transform: translateY(-200%); padding: 8px 16px; background: var(--surface); z-index: 1; }
+    .skip-link:focus { transform: none; }
+    main > :last-child { margin-bottom: 0; }
+    @media (prefers-color-scheme: dark) {
+      :root { --background: #17171c; --surface: #22222a; --text: #f0f0f5; --secondary: #bbbbca; --accent: #8fd3a8; --border: #41414d; }
+    }
+    @media (max-width: 480px) {
+      .page { padding: 24px 16px 32px; }
+      main { border-radius: 20px; }
+    }
+    @media print {
+      :root { color-scheme: light; --surface: #fff; --text: #000; --secondary: #333; --accent: #000; }
+      body { background: #fff; }
+      .page { max-width: none; padding: 0; }
+      .site-header, .skip-link { display: none; }
+      main { border: 0; padding: 0; }
+      h2 { break-after: avoid; }
+      p, li { orphans: 3; widows: 3; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="page">
+    <header class="site-header">
+      <span class="brand">Fintrack</span>
+      <nav aria-label="Support and privacy">
+        <a href="https://stewie66.github.io/App-Policy/Fintrack-Support-Page.html">Support</a>
+        <a href="https://stewie66.github.io/App-Policy/Fintrack-Privacy-Page.html" aria-current="page">Privacy policy</a>
+      </nav>
+    </header>
+    <main id="content" tabindex="-1">
+      <h1>Fintrack privacy policy</h1>
+      <p><strong>Updated:</strong> 23 November 2026</p>
+      <p><strong>App:</strong> Fintrack: Spending &amp; Bills (installed as Fintrack)<br>
+<strong>Developer:</strong> Stewart Dunn<br>
+<strong>Privacy contact:</strong> <a href="mailto:appsupport@app.sdmail.net">appsupport@app.sdmail.net</a></p>
+      <h2 id="summary">Summary</h2>
+      <p>Fintrack keeps your finances on your device. It has no account, no sign-in, no server, no bank connection, no advertising, no analytics and no third-party SDKs, and it makes no network requests of its own. It does not track you across other apps or websites. The developer does not receive, store or sell your transactions, balances, bills or any other information you enter.</p>
+      <h2 id="what-fintrack-stores">What Fintrack stores on your device</h2>
+      <p>Fintrack saves the accounts, transactions, categories, budgets, recurring bills, import rules and settings you create in the app&#39;s storage on your iPhone. This includes amounts, merchant names, dates, notes, account names and the last four digits of cards or accounts if you enter them, and your own name if you add it in Settings to help recognise transfers between your accounts. This data is not synced to your other devices or sent anywhere. Your device may include it in iCloud or computer backups under Apple&#39;s backup settings.</p>
+      <h2 id="logging-purchases">Logging purchases automatically</h2>
+      <p>If you set up the Log to Fintrack shortcut, a Shortcuts automation that you create passes the details of each card purchase, such as the amount, merchant and card name, to Fintrack on your device. Fintrack records it as a transaction. To help you check the automation is working, Fintrack keeps a short log of what it received from the most recent runs (up to 30 entries, removed after 30 days) on your device. You can switch the automation off or delete it in the Shortcuts app at any time.</p>
+      <h2 id="importing">Importing statements, screenshots and receipts</h2>
+      <p>When you import a bank statement (PDF, CSV, OFX, QFX, QIF or a plain text journal) or share a screenshot or receipt to Fintrack, the file is read on your device. Text in images and PDFs is recognised with Apple&#39;s on-device Vision framework. Files shared from other apps are held in Fintrack&#39;s private storage on your device until they are imported, and are protected so they can only be read while your iPhone is unlocked. Fintrack only reads files you choose to import or share with it.</p>
+      <h2 id="apple-intelligence">Apple Intelligence</h2>
+      <p>On devices that support it, Fintrack uses Apple&#39;s on-device language model to turn bank descriptions into readable merchant names and suggest categories. This runs entirely on your device; the descriptions are not sent to Apple, the developer or anyone else by Fintrack.</p>
+      <h2 id="siri-shortcuts-spotlight">Siri, Shortcuts and Spotlight</h2>
+      <p>If you ask Siri or run the Get Spending action, Fintrack works out the answer from the data on your device and returns it to Siri or Shortcuts to show or speak. Your request to Siri is handled by Apple under <a href="https://www.apple.com/legal/privacy/">Apple&#39;s privacy policy</a>. To let Siri and Spotlight recognise your categories, Fintrack adds category names and related words to your device&#39;s Spotlight index; transactions and amounts are not added.</p>
+      <h2 id="widgets-and-notifications">Widgets and notifications</h2>
+      <p>Fintrack shares a copy of its data with its Home Screen and Lock Screen widgets and its share extension through Apple&#39;s App Group storage on your device, so widgets can show your spending and upcoming bills. If you allow notifications, Fintrack schedules local notifications on your device for bill reminders, budget alerts and the monthly review. They can include bill names, amounts and category names, and may appear on your Lock Screen depending on your notification settings. No notification is sent through a server.</p>
+      <h2 id="face-id">Face ID and app switcher</h2>
+      <p>If you switch on Require Face ID, Fintrack asks your device to confirm it&#39;s you using Face ID, Touch ID or your passcode through Apple&#39;s LocalAuthentication framework. Fintrack never receives your face data, fingerprint or passcode. Fintrack also hides its screen in the app switcher so balances aren&#39;t shown there.</p>
+      <h2 id="backups-and-exports">Backups and exported files</h2>
+      <p>Backups and exports (CSV, OFX, QIF, hledger journal or PDF) are saved only where you choose, such as Files or iCloud Drive, or sent to an app you pick. They contain the financial data you include. A backup can be protected with a password, which encrypts it on your device; without one, anyone who has the file can read it. Fintrack does not upload these files anywhere itself; if you save them to a cloud service, that service&#39;s own privacy policy applies.</p>
+      <h2 id="deleting-your-data">Deleting your data</h2>
+      <p>You can delete individual transactions, bills, accounts and categories in Fintrack at any time, or use Settings › Delete Data to delete every transaction and bill, and optionally your accounts. Deleting the app removes all of its data from your device, so make a backup first if you want to keep it. Backups and exports you have saved elsewhere remain until you delete them there.</p>
+      <h2 id="contacting-support">Contacting support</h2>
+      <p>If you email support, the developer and the email service used to receive support messages process your email address and anything you choose to send in order to respond. Please don&#39;t send bank statements, account numbers or other financial details unless they are needed to explain the issue, and remove anything sensitive first. Support correspondence is kept only as long as needed to resolve your request, then deleted. To request deletion of a support message, contact <a href="mailto:appsupport@app.sdmail.net">appsupport@app.sdmail.net</a>.</p>
+      <h2 id="website">Visiting this website</h2>
+      <p>These pages are hosted on GitHub Pages. GitHub logs visitors&#39; IP addresses for security purposes, including when you open this policy from the app or the App Store. See <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">GitHub&#39;s hosting data-collection information</a>.</p>
+      <h2 id="children-and-changes">Children and policy changes</h2>
+      <p>Fintrack does not require personal information to use its features and does not knowingly collect information from children. If a child has sent personal information by email, contact support and it will be deleted. This policy will be updated, with a new date above, if the app&#39;s data practices change. For privacy questions, contact <a href="mailto:appsupport@app.sdmail.net">appsupport@app.sdmail.net</a>.</p>
+    </main>
+  </div>
+</body>
+</html>
