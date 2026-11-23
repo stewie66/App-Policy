@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fintrack support</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #f5f5fa;
+      --surface: #ffffff;
+      --text: #20202a;
+      --secondary: #626273;
+      --accent: #2f6b4a;
+      --border: #dedee9;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--background); color: var(--text); }
+    .page { max-width: 820px; margin: 0 auto; padding: 32px 24px 48px; }
+    .site-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px 24px;
+      margin-bottom: 24px;
+    }
+    .brand { font-size: 1.15rem; font-weight: 700; letter-spacing: -0.03em; }
+    nav { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+    nav a { display: inline-block; padding: 8px 0; }
+    nav a[aria-current="page"] { font-weight: 700; }
+    main {
+      padding: clamp(24px, 5vw, 48px);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+    }
+    h1 { margin: 0 0 24px; font-size: clamp(1.8rem, 5vw, 2.4rem); line-height: 1.2; letter-spacing: -0.04em; }
+    h2 { margin: 36px 0 12px; font-size: 1.25rem; line-height: 1.35; letter-spacing: -0.02em; }
+    p { margin: 0 0 18px; }
+    ul, ol { margin: 0 0 18px; padding-left: 24px; }
+    li + li { margin-top: 8px; }
+    a { color: var(--accent); text-underline-offset: 0.18em; overflow-wrap: anywhere; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 4px; }
+    .draft-note { color: var(--secondary); padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+    .skip-link { position: absolute; top: 8px; left: 8px; transform: translateY(-200%); padding: 8px 16px; background: var(--surface); z-index: 1; }
+    .skip-link:focus { transform: none; }
+    main > :last-child { margin-bottom: 0; }
+    @media (prefers-color-scheme: dark) {
+      :root { --background: #17171c; --surface: #22222a; --text: #f0f0f5; --secondary: #bbbbca; --accent: #8fd3a8; --border: #41414d; }
+    }
+    @media (max-width: 480px) {
+      .page { padding: 24px 16px 32px; }
+      main { border-radius: 20px; }
+    }
+    @media print {
+      :root { color-scheme: light; --surface: #fff; --text: #000; --secondary: #333; --accent: #000; }
+      body { background: #fff; }
+      .page { max-width: none; padding: 0; }
+      .site-header, .skip-link { display: none; }
+      main { border: 0; padding: 0; }
+      h2 { break-after: avoid; }
+      p, li { orphans: 3; widows: 3; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="page">
+    <header class="site-header">
+      <span class="brand">Fintrack</span>
+      <nav aria-label="Support and privacy">
+        <a href="https://stewie66.github.io/App-Policy/Fintrack-Support-Page.html" aria-current="page">Support</a>
+        <a href="https://stewie66.github.io/App-Policy/Fintrack-Privacy-Page.html">Privacy policy</a>
+      </nav>
+    </header>
+    <main id="content" tabindex="-1">
+      <h1>Fintrack support</h1>
+      <p>Fintrack shows where your money goes: log purchases as you pay, import bank statements, keep track of bills and subscriptions, set budgets and see your spending by category. Everything stays on your iPhone.</p>
+      <h2 id="contact">Contact</h2>
+      <p>Email <a href="mailto:appsupport@app.sdmail.net">appsupport@app.sdmail.net</a> with questions, problems or suggestions. Please include your iPhone model, iOS version and Fintrack version (Settings › About), and what you expected to happen. Don&#39;t send bank statements or account numbers; a description or a screenshot with personal details covered is usually enough.</p>
+      <h2 id="guide">User guide</h2>
+      <p>Fintrack has a full guide built in: open Settings (the gear on the Overview) › Help &amp; Guide. Screens with more to them, such as statement review and the bill editor, have a book button that opens their part of the guide.</p>
+      <h2 id="common-questions">Common questions</h2>
+      <h3>Purchases aren&#39;t being logged automatically</h3>
+      <p>Open Settings › Automation › Automation Activity. If nothing appears after you pay, the automation didn&#39;t start: in the Shortcuts app, open the Log to Fintrack automation and make sure it&#39;s switched on. Shared automations arrive switched off. Settings › Automation › Add Log to Fintrack Shortcut… adds the latest version.</p>
+      <h3>A bank statement didn&#39;t import correctly</h3>
+      <p>Fintrack reads PDF, CSV, OFX, QFX and QIF statements. If your bank offers CSV or OFX downloads, they import most reliably. After importing, check the totals on the review screen, which show whether the statement balances. Import rules (Settings › Statements › Import Rules) can rename and categorise transactions the way you like.</p>
+      <h3>My totals look wrong</h3>
+      <p>Transfers between your own accounts and card repayments never count as spending. Check Activity for a transaction counted twice; Possible Duplicates offers to merge a purchase your bank reported again under another name.</p>
+      <h3>Amounts show the wrong currency</h3>
+      <p>Fintrack uses the currency of your iPhone&#39;s region. Change it in the Settings app › General › Language &amp; Region › Region.</p>
+      <h3>Backing up and moving to a new iPhone</h3>
+      <p>In Fintrack&#39;s Settings, tap Back Up… and save the file somewhere you can reach from the new iPhone, such as iCloud Drive. On the new iPhone, tap Restore from Backup… and choose the file. If you set a password, you&#39;ll need it to restore; it can&#39;t be recovered.</p>
+      <h2 id="privacy">Privacy</h2>
+      <p>Fintrack has no account and sends nothing to a server. Read the <a href="https://stewie66.github.io/App-Policy/Fintrack-Privacy-Page.html">privacy policy</a> for details.</p>
+    </main>
+  </div>
+</body>
+</html>
